@@ -1,0 +1,271 @@
+/* Basic styling for the body */
+body {
+    font-family: 'Arial', sans-serif; /* Use a common font */
+    line-height: 1.6; /* Spacing between lines of text */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    background-color: #e0f2f7; /* Light blue background */
+    color: #333; /* Default text color */
+}
+
+/* Style the header */
+header {
+    background-color: #00796b; /* Teal background */
+    color: #ffffff; /* White text */
+    padding: 20px 0; /* Add padding top and bottom */
+    text-align: center; /* Center the text */
+    margin-bottom: 30px; /* Space below header */
+}
+
+header h1 {
+    margin-top: 0; /* Remove default margin on top of heading */
+    font-size: 2.5em; /* Larger font size for main title */
+    font-weight: bold;
+    color: black;
+
+}
+
+header p {
+    font-size: 1.2em; /* Slightly larger font for subheading */
+    color: black;
+}
+
+/* Style the main content area */
+main {
+    max-width: 960px; /* Limit the maximum width of the content */
+    margin: 20px auto; /* Center the content block horizontally and add top/bottom margin */
+    padding: 0 20px; /* Add padding on the left and right */
+}
+
+/* Style individual sections */
+section {
+    background-color: #ffffff; /* White background for content sections */
+    margin-bottom: 30px; /* Space between sections */
+    padding: 20px; /* Padding inside each section */
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+section h2 {
+    color: #004d40; /* Darker teal for section headings */
+    margin-top: 0; /* Remove default top margin */
+    border-bottom: 2px solid #00796b; /* Underline for headings */
+    padding-bottom: 5px; /* Space between text and underline */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+/* Style images within sections */
+section img {
+    max-width: 100%; /* Ensure images don't overflow their container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make image a block element */
+    margin: 20px auto; /* Center images and add space above/below */
+    border-radius: 5px; /* Slightly rounded corners for images */
+}
+
+/* Style the footer */
+footer {
+    text-align: center; /* Center footer text */
+    padding: 15px 0; /* Add padding top and bottom */
+    margin-top: 30px; /* Space above the footer */
+    background-color: #00796b; /* Dark teal background */
+    color: #ffffff; /* White text */
+    font-size: 0.9em; /* Smaller font size */
+}
+
+/* Optional: Style links */
+a {
+    color: #00796b; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+nav {
+    background-color: #c8e6c9; /* Light green background for the nav bar */
+    padding: 10px 20px; /* Adds space around the links (10px top/bottom, 20px left/right) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    /* Because <nav> is the first element in the body, it appears at the top-left by default flow */
+}
+
+nav ul {
+    list-style: none; /* Removes the bullet points */
+    padding: 0; /* Removes default inner padding */
+    margin: 0; /* Removes default outer margin */
+    display: flex; /* Arranges the list items (<li>) horizontally */
+    align-items: center; /* Vertically aligns items in the middle */
+}
+
+nav ul li {
+    margin-right: 20px; /* Creates space between each link */
+    /* display: inline-block; /* An alternative to flexbox for horizontal lists */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Removes the extra space after the last link */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes the default underline from links */
+    color: #004d40; /* Sets the link text color */
+    font-weight: bold; /* Makes the link text bold */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+nav ul li a:hover {
+    color: #00796b; /* Color when you hover over the link */
+}
+/* --- End of navigation bar rules --- */
+
+/* ... your other CSS rules (for body, header, main, section, img, footer) follow below ... */
+
+#video-section {
+    /* Ensure the section is displayed as a block element */
+    display: block;
+
+    /* Ensure visibility in case it was set to hidden elsewhere */
+    visibility: visible;
+
+    /* Add some padding for internal spacing */
+    padding: 20px; /* Adjust as needed */
+
+    /* Add some margin to separate it from other sections */
+    margin-top: 30px; /* Adjust as needed */
+    margin-bottom: 30px; /* Adjust as needed */
+
+    /* Optional: Add a background color or border to make it visually distinct */
+    /* background-color: #fff; */
+    /* border: 1px solid #ddd; */
+    /* border-radius: 8px; */
+}
+
+/* The styles for the video-container and iframe that were inline in your HTML */
+/* You could move these into your CSS file for cleaner HTML */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px auto;
+    background: #000; /* Background shown while video loads or if no video */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* You might also want to style the h2 and p inside the section */
+#video-section h2 {
+    text-align: center; /* Center the heading */
+    margin-top: 0;
+}
+
+#video-section p {
+    text-align: center; /* Center the paragraph */
+    margin-bottom: 20px;
+}
+
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+  }
+  
+  /* Header section */
+  header {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    background-color: #d1e1f3;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #4a90e2;
+  }
+  
+  .contact h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #2c3e50;
+  }
+  
+  .contact p, .contact a {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    color: #555;
+    text-decoration: none;
+  }
+  
+  /* Section styles */
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  section h2 {
+    font-size: 1.5rem;
+    color: #4a90e2;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    color: #2c3e50;
+  }
+  
+  section p {
+    margin: 0.2rem 0 0.5rem;
+    font-style: italic;
+    color: #666;
+  }
+  
+  ul {
+    padding-left: 1.5rem;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+
+  body.moosemad header {
+    background-color: #00796b; /* soft orange for MooseMad header */
+  }
+  body.home header {
+    background-color: #00796b;
+  }
+
+
+  

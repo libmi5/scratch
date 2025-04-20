@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moose Trivia!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Set base font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Add a subtle background gradient */
+        body {
+            background: linear-gradient(135deg, #e2f2e1 0%, #d1e0ec 100%);
+            /* Ensure gradient covers full height */
+            min-height: 100vh;
+        }
+        /* Ensure button text is centered */
+        button {
+             text-align: center;
+        }
+        /* Style for the SVG icon */
+        .moose-icon {
+            display: inline-block;
+            width: 1.5em; /* Adjust size as needed */
+            height: 1.5em;
+            margin-right: 0.5em;
+            vertical-align: middle; /* Align with text */
+            fill: currentColor; /* Use text color */
+        }
+    </style>
+</head>
+<body class="flex flex-col"> <nav class="bg-white shadow-lg w-full p-4">
+        <ul class="flex flex-wrap justify-center items-center space-x-4 sm:space-x-8">
+            <li><a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-200 px-2 py-1 rounded hover:bg-gray-100">Home</a></li>
+            <li><a href="moosemad.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-200 px-2 py-1 rounded hover:bg-gray-100">Moose Gone Mad</a></li>
+            <li><a href="resume.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-200 px-2 py-1 rounded hover:bg-gray-100">Resume</a></li>
+            <li><a href="https://libbymiller5.github.io/Piano-Studio/" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition duration-200 px-2 py-1 rounded hover:bg-gray-100">Professional Page</a></li>
+            <li><a href="game.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-200 px-2 py-1 rounded hover:bg-gray-100">Game</a></li>
+        </ul>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center p-4">
+        <div class="game-container bg-white p-8 sm:p-10 rounded-xl shadow-2xl text-center max-w-xl w-full border border-gray-200 mt-8 mb-8"> <div class="flex items-center justify-center mb-8">
+                 <svg class="moose-icon text-amber-800" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.1,6.6c-0.1-0.7-0.3-1.4-0.6-2c-0.5-1.2-1.4-2.2-2.6-2.8c-0.8-0.4-1.7-0.6-2.6-0.7c-0.1,0-0.2,0-0.2,0h-0.1 c-0.9,0-1.8,0.2-2.6,0.7C9.1,2.4,8.2,3.4,7.7,4.6C7.4,5.2,7.2,5.9,7.1,6.6C6.1,6.8,5.2,7.3,4.5,8 C3.5,8.9,2.9,10.1,2.7,11.4c-0.1,0.6-0.1,1.2,0,1.8c0.1,0.8,0.4,1.6,0.8,2.3c0.8,1.4,2,2.5,3.5,3.1c0.1,0,0.1,0,0.2,0 c0.2,0,0.4-0.1,0.6-0.1c0.7-0.2,1.3-0.5,1.9-0.9c0.6-0.4,1.1-0.9,1.5-1.5c0.1-0.1,0.1-0.1,0.2-0.2c0,0,0.1,0,0.1-0.1 c0.1,0,0.1,0,0.2,0c0,0,0,0,0,0c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.1,0.1c0.1,0.1,0.1,0.1,0.2,0.2c0.4,0.6,0.9,1.1,1.5,1.5 c0.6,0.4,1.2,0.7,1.9,0.9c0.2,0.1,0.4,0.1,0.6,0.1c0.1,0,0.1,0,0.2,0c1.5-0.5,2.7-1.7,3.5-3.1c0.4-0.7,0.7-1.5,0.8-2.3 c0.1-0.6,0.1-1.2,0-1.8c-0.2-1.3-0.8-2.5-1.8-3.4C21,7.3,20.1,6.8,19.1,6.6z M17.1,16.3c-0.6,0.9-1.5,1.6-2.5,2 c-0.1,0-0.2,0-0.3,0c-0.1,0-0.2,0-0.3-0.1c-0.5-0.2-1-0.4-1.4-0.7c-0.5-0.3-0.9-0.7-1.2-1.2c-0.1-0.1-0.1-0.2-0.2-0.2 c-0.1-0.1-0.2-0.1-0.3-0.1s-0.2,0-0.3,0.1c-0.1,0.1-0.1,0.1-0.2,0.2c-0.3,0.5-0.7,0.9-1.2,1.2c-0.4,0.3-0.9,0.6-1.4,0.7 c-0.1,0.1-0.2,0.1-0.3,0.1c-0.1,0-0.2,0-0.3,0c-1-0.4-1.9-1.1-2.5-2c-0.5-0.8-0.8-1.7-0.8-2.6c0-0.5,0-1,0.1-1.5 c0.1-1,0.6-1.9,1.4-2.6C5.8,9,6.5,8.6,7.3,8.4C7.6,7.3,8.3,6.3,9.2,5.6c0.6-0.5,1.3-0.8,2-0.9c0.1,0,0.1,0,0.2,0h0.1 c0.8,0,1.5,0.3,2,0.9c0.9,0.7,1.5,1.7,1.8,2.8c0.8,0.2,1.5,0.6,2.1,1.2c0.8,0.7,1.3,1.6,1.4,2.6c0.1,0.5,0.1,1,0.1,1.5 C17.9,14.6,17.6,15.5,17.1,16.3z"/>
+                    <path d="M9.5 10c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1zm5 0c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1z"/>
+                 </svg>
+                <h1 class="text-4xl sm:text-5xl font-bold text-gray-800">Moose Trivia!</h1>
+            </div>
+
+            <div id="lives-container" class="text-xl text-red-600 mb-8 font-medium">
+                Lives Remaining: <span id="lives-count" class="font-bold text-2xl">3</span> ❤️
+            </div>
+
+            <div id="question-container" class="bg-amber-50 p-6 rounded-lg mb-8 min-h-[100px] flex items-center justify-center border border-amber-200">
+                <p id="question-text" class="text-xl text-amber-900 leading-relaxed">Loading moose fact...</p>
+            </div>
+
+            <div id="button-container" class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+                <button id="true-button" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition duration-200 ease-in-out transform hover:scale-105 w-full sm:w-32">True</button>
+                <button id="false-button" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition duration-200 ease-in-out transform hover:scale-105 w-full sm:w-32">False</button>
+            </div>
+
+            <div id="feedback-container" class="min-h-[30px] mb-8">
+                <p id="feedback-text" class="text-xl font-semibold"></p>
+            </div>
+
+            <div id="game-over-container" class="hidden px-6 py-4 rounded-lg relative mt-8 border" role="alert">
+                <strong id="game-over-title" class="font-bold text-2xl block sm:inline">Game Over!</strong>
+                <p id="final-message" class="block text-lg mt-2">You ran out of lives.</p>
+                <button id="restart-button" class="mt-5 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-lg shadow-md transition duration-200 ease-in-out transform hover:scale-105">Play Again?</button>
+            </div>
+
+            <footer class="mt-10 text-center text-gray-500 text-sm">
+                © 2025 Moose Trivia Fun | Test Your Knowledge!
+            </footer>
+
+        </div> </main> <script defer>
+        // --- DOM Elements ---
+        const livesCountSpan = document.getElementById('lives-count');
+        const questionTextP = document.getElementById('question-text');
+        const trueButton = document.getElementById('true-button');
+        const falseButton = document.getElementById('false-button');
+        const feedbackTextP = document.getElementById('feedback-text');
+        const gameOverContainer = document.getElementById('game-over-container');
+        const gameOverTitle = document.getElementById('game-over-title');
+        const finalMessageP = document.getElementById('final-message');
+        const restartButton = document.getElementById('restart-button');
+        const buttonContainer = document.getElementById('button-container');
+        const questionContainer = document.getElementById('question-container');
+
+        // --- Game Data ---
+        const mooseFacts = [
+            { fact: "Moose antlers are shed and regrown each year.", isTrue: true },
+            { fact: "Moose are herbivores, primarily eating plants and leaves.", isTrue: true },
+            { fact: "A male moose is called a cow.", isTrue: false }, // It's called a bull
+            { fact: "Moose can swim and often enter water to eat aquatic plants.", isTrue: true },
+            { fact: "Moose are native to Australia.", isTrue: false }, // Native to Northern Hemisphere
+            { fact: "The flap of skin hanging under a moose's chin is called a 'bell'.", isTrue: true },
+            { fact: "Moose cannot close their nostrils underwater.", isTrue: false }, // They can close them
+            { fact: "A baby moose is called a 'fawn'.", isTrue: false }, // It's called a calf
+            { fact: "Moose are the largest species in the deer family.", isTrue: true },
+            { fact: "Moose have excellent eyesight but poor hearing.", isTrue: false }, // Poor eyesight, excellent hearing/smell
+            { fact: "Moose antlers can weigh up to 40 pounds (18 kg).", isTrue: true },
+            { fact: "Moose are solitary animals and rarely form herds.", isTrue: true }
+        ];
+
+        // --- Game State Variables ---
+        let lives;
+        let currentQuestionIndex;
+        let shuffledFacts;
+        let acceptingAnswers;
+
+        // --- Functions ---
+
+        /** Shuffles array in place (Fisher-Yates) */
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        /** Initializes or resets the game */
+        function startGame() {
+            lives = 3;
+            currentQuestionIndex = 0;
+            acceptingAnswers = true;
+
+            shuffledFacts = [...mooseFacts];
+            shuffleArray(shuffledFacts);
+
+            // Reset UI
+            livesCountSpan.textContent = lives;
+            feedbackTextP.textContent = '';
+            feedbackTextP.className = 'text-xl font-semibold'; // Reset feedback style
+            gameOverContainer.classList.add('hidden');
+            buttonContainer.classList.remove('hidden');
+            questionContainer.classList.remove('hidden');
+            enableButtons();
+
+            displayNextQuestion();
+        }
+
+        /** Displays the next question */
+        function displayNextQuestion() {
+            if (currentQuestionIndex >= shuffledFacts.length) {
+                endGame(true); // Player won
+                return;
+            }
+
+            const currentFact = shuffledFacts[currentQuestionIndex];
+            questionTextP.textContent = currentFact.fact;
+            feedbackTextP.textContent = '';
+            feedbackTextP.className = 'text-xl font-semibold';
+            acceptingAnswers = true;
+        }
+
+        /** Handles user's answer */
+        function handleAnswer(userChoice) {
+            if (!acceptingAnswers) return;
+            acceptingAnswers = false;
+
+            const currentFact = shuffledFacts[currentQuestionIndex];
+            const correctAnswer = currentFact.isTrue;
+
+            if (userChoice === correctAnswer) {
+                feedbackTextP.textContent = "Correct!";
+                feedbackTextP.className = 'text-xl font-semibold text-green-600';
+            } else {
+                feedbackTextP.textContent = "Incorrect!";
+                feedbackTextP.className = 'text-xl font-semibold text-red-600';
+                lives--;
+                livesCountSpan.textContent = lives;
+            }
+
+            if (lives <= 0) {
+                endGame(false); // Player lost
+            } else {
+                currentQuestionIndex++;
+                // Add a slight delay before showing the next question
+                setTimeout(displayNextQuestion, 1500);
+            }
+        }
+
+        /** Ends the game */
+        function endGame(won) {
+            acceptingAnswers = false;
+            disableButtons();
+            questionContainer.classList.add('hidden');
+            buttonContainer.classList.add('hidden');
+
+            // Style the Game Over/Win container
+            gameOverContainer.classList.remove('hidden', 'bg-red-100', 'border-red-400', 'text-red-700', 'bg-green-100', 'border-green-400', 'text-green-700'); // Clear previous styles
+
+            if (won) {
+                gameOverTitle.textContent = "You Win!";
+                finalMessageP.textContent = "Amazing! You know your moose facts!";
+                gameOverContainer.classList.add('bg-green-100', 'border-green-400', 'text-green-700');
+            } else {
+                 gameOverTitle.textContent = "Game Over!";
+                 const lastFact = shuffledFacts[currentQuestionIndex]; // Get the fact they failed on
+                 finalMessageP.textContent = `You ran out of lives! The statement "${lastFact.fact}" is ${lastFact.isTrue ? 'True' : 'False'}.`;
+                 gameOverContainer.classList.add('bg-red-100', 'border-red-400', 'text-red-700');
+            }
+        }
+
+        /** Disables answer buttons */
+        function disableButtons() {
+            trueButton.disabled = true;
+            falseButton.disabled = true;
+            trueButton.classList.add('opacity-50', 'cursor-not-allowed', 'hover:scale-100'); // Remove hover effect when disabled
+            falseButton.classList.add('opacity-50', 'cursor-not-allowed', 'hover:scale-100');
+             trueButton.classList.remove('transform', 'hover:scale-105');
+            falseButton.classList.remove('transform', 'hover:scale-105');
+        }
+
+        /** Enables answer buttons */
+        function enableButtons() {
+            trueButton.disabled = false;
+            falseButton.disabled = false;
+            trueButton.classList.remove('opacity-50', 'cursor-not-allowed', 'hover:scale-100');
+            falseButton.classList.remove('opacity-50', 'cursor-not-allowed', 'hover:scale-100');
+            trueButton.classList.add('transform', 'hover:scale-105');
+            falseButton.classList.add('transform', 'hover:scale-105');
+        }
+
+        // --- Event Listeners ---
+        trueButton.addEventListener('click', () => handleAnswer(true));
+        falseButton.addEventListener('click', () => handleAnswer(false));
+        restartButton.addEventListener('click', startGame);
+
+        // --- Initial Game Start ---
+        startGame();
+    </script>
+
+</body>
+</html>
+
